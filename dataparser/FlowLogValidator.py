@@ -14,7 +14,7 @@ def validateAmazonVpcFlowLogRecord(values: List[str])-> bool:
         print("Error: ", e)
         return False
     
-    if version < 2:
+    if version != 2:
         print("Invalid version number")
         return False
     

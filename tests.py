@@ -4,7 +4,7 @@ from datastore.LookupTable import LookupTable
 from datastore.FlowLogFileSystemStore import FlowLogFileSystemStore
 from dataparser.AmazonVpcFlowLogParser import AmazonVpcFlowLogParser
 from tagger.FlowLogTagger import FlowLogTagger
-from Utilities import getNumberToProtocolMap
+from utilities import getNumberToProtocolMap
 
 def testLookupTableCreation():
     lookup = LookupTable("./data/dstport_protocol_to_tag.csv")
